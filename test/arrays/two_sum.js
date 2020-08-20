@@ -14,7 +14,7 @@ const twoSum = (array, sum) => {
 			pairs.push([part1, part2]);
 		}
 		store.push(part1);
-		console.log({part1, part2, pairs, store});
+		// console.log({part1, part2, pairs, store});
 	}
 
 	return pairs;
