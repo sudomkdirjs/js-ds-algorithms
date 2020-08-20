@@ -1,0 +1,26 @@
+{
+  "name": "js-ds-algorithms",
+  "version": "1.0.0",
+  "description": "Learning Data Structures and Algorithms in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'test/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudomkdirjs/js-ds-algorithms.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "marees",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudomkdirjs/js-ds-algorithms/issues"
+  },
+  "homepage": "https://github.com/sudomkdirjs/js-ds-algorithms#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
+  }
+}
