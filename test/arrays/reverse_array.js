@@ -1,3 +1,5 @@
+// Given an array of items, reverse the order.
+
 let chai = require('chai');
 
 const { assert } = chai;

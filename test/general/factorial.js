@@ -1,3 +1,5 @@
+// Factorial
+
 let chai = require('chai');
 
 const { assert } = chai;
