@@ -38,6 +38,11 @@ var searchInsert = function(nums, target) {
     return lowIndex;
 };
 
+// Approach
+// Naive approach would be start from left side of the array and insert at a point where you find the first match or next higher number. 
+// This approach works very well for small arrays.
+// As the array is already sorted Binary search can be modified to reduce the time complexity
+
 
 describe("Search Insert Position", () => {
     it("Should return Search Insert Position", () => {
