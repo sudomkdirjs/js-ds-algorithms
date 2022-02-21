@@ -4,7 +4,8 @@
   "description": "Learning Data Structures and Algorithms in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test/**/*.js'"
+    "test": "mocha 'test/**/*.js'",
+    "leetcode": "mocha 'leetcode/**/*.js'"
   },
   "repository": {
     "type": "git",
