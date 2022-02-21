@@ -8,7 +8,7 @@
 
 let chai = require('chai');
 
-const { assert, expect } = chai;
+const { expect } = chai;
 
 var generate = function(numRows) {
     
