@@ -41,6 +41,10 @@ var kidsWithCandies = function(candies, extraCandies) {
     return candies.map(candy => (candy + extraCandies) >= max);
 };
 
+// Approach
+// The best approach would be to check the maximum value from the candies 
+// and then check if each of the value in the array when added can sum up to the maximum value or higher
+
 describe("Kids With the Greatest Number of Candies", () => {
     it("Should return a boolean array result of length n", () => {
         expect(kidsWithCandies([2,3,5,1,3], 3)).to.eql([true,true,true,false,true]);
