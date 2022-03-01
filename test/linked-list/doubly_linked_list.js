@@ -40,8 +40,11 @@ class LinkedList {
         if (!this.head) return null;
         const value = this.head.value;
         this.head = this.head.prev;
-        if (this.head) this.head.next = null;
-        else this.tail = null;
+        if (this.head) {
+            this.head.next = null;
+        } else {
+            this.tail = null;
+        }
         return value;
     }
 
@@ -49,15 +52,20 @@ class LinkedList {
         if (!this.tail) return null;
         const value = this.tail.value;
         this.tail = this.tail.next;
-        if (this.tail) this.tail.prev = null;
-        else this.head = null;
+        if (this.tail) {
+            this.tail.prev = null;
+        } else {
+            this.head = null;
+        }
         return value;
     }
 
     search(value) {
         let current = this.head;
         while (current) {
-            if (current.value === value) return value;
+            if (current.value === value) {
+                return value;
+            }
             current = current.prev;
         }
         return null;
@@ -68,7 +76,9 @@ class LinkedList {
         let current = this.tail;
         let index = 0;
         while (current) {
-            if (current.value === value) indexes.push(index);
+            if (current.value === value) {
+                indexes.push(index);
+            }
             current = current.next;
             index++;
         }

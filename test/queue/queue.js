@@ -1,4 +1,7 @@
-// Queues are just arrays with two primary operations: unshift and pop. Unshift enqueues items to the end of the array, while Pop dequeues them from the beginning of the array. In other words, Queues follow the “First In, First Out” protocol (FIFO). If the direction is reversed, we can replace unshift and pop with push and shift, respectively.
+// Queues are just arrays with two primary operations: unshift and pop. 
+// Unshift enqueues items to the end of the array, while Pop dequeues them from the beginning of the array. 
+// In other words, Queues follow the “First In, First Out” protocol (FIFO). 
+// If the direction is reversed, we can replace unshift and pop with push and shift, respectively.
 
 
 let chai = require('chai');
@@ -25,7 +28,7 @@ class Queue {
 describe("Queues", () => {
     it("Should enqueue items to the left", () => {
         const queue = new Queue(4, 5);
-        assert.equal(queue.enqueue(1, 2, 3), 5);
+        assert.equal(queue.enqueue(1, 2, 3), 5); //count
         assert.deepEqual(queue.queue, [1, 2, 3, 4, 5]);
     });
 
@@ -38,12 +41,14 @@ describe("Queues", () => {
 
     it("Should dequeue item from the right", () => {
         const queue = new Queue(1, 2, 3);
-        assert.equal(queue.dequeue(), 3);
+        assert.equal(queue.dequeue(), 3); // removed value
+        assert.deepEqual(queue.queue, [1, 2]);
     });
 
     it("Should dequeue item from the left", () => {
         const queue = new Queue(1, 2, 3);
         queue.reverse = true;
-        assert.equal(queue.dequeue(), 1);
+        assert.equal(queue.dequeue(), 1); // removed value
+        assert.deepEqual(queue.queue, [2, 3]);
     });
 });
