@@ -1,5 +1,5 @@
 # js-ds-algorithms
-Learning Data Structures and Algorithms in JavaScript
+Problem Solving, Data Structures and Algorithms in JavaScript.
 
 ## To run the tests
 

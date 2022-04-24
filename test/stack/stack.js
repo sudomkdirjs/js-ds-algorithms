@@ -1,5 +1,6 @@
 //  Stacks follow the “Last In, First Out” protocol (LIFO).
-// Programmatically, it’s just an array with two principled operations: push and pop. Push adds elements to the top of the array, while Pop removes them from the same location.
+// Programmatically, it’s just an array with two principled operations: push and pop. 
+// Push adds elements to the top of the array, while Pop removes them from the same location.
 
 
 let chai = require('chai');

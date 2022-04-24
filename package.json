@@ -4,7 +4,8 @@
   "description": "Learning Data Structures and Algorithms in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test/**/*.js'"
+    "test": "mocha 'test/**/*.js'",
+    "leetcode": "mocha 'leetcode/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
   "homepage": "https://github.com/sudomkdirjs/js-ds-algorithms#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "deep-eql": "^4.0.0",
     "mocha": "^8.1.1"
+  },
+  "dependencies": {
   }
 }
