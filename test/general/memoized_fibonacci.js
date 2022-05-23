@@ -19,12 +19,12 @@ const fibonacci = (element, cache = []) => {
 const _memoize = fn => {
     const cache = {};
     return (...args) => {
-        // console.log("----->", args, cache)
+        console.log("----->", args, cache)
         if (cache[args]) return cache[args];
 
         const output = fn.apply(this, args);
         cache[args] = output;
-        // console.log(cache)
+        console.log(cache)
         return output;
     };
 };
